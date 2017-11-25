@@ -16,17 +16,14 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home','HomeController');
+Route::get('/home','HomeController@(metodo)');
 
 Route::get('/faq','FaqContoller@(metodo)');
 
 Route::get('/elset','ElsetController@(metodo)');
 
-Route::get('/perfil','PerfilController@(metodo)');
+Route::get('/perfil','PerfilController@prueba');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-
-
