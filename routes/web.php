@@ -14,16 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
-
-
-Route::get('/home','HomeController@(metodo)');
-
-Route::get('/faq','FaqContoller@(metodo)');
-
-Route::get('/elset','ElsetController@(metodo)');
-
-Route::get('/perfil','PerfilController@prueba');
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/home','HomeController@index');
+
+Route::get('/faq','FaqContoller@faqo');
+
+Route::get('/elset','ElsetController@elseto');
+
+Route::get('/perfil','PerfilController@prueba');
+
