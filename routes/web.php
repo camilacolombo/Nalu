@@ -33,3 +33,7 @@ Route::post('/post','PostController@guardapost');
 Route::get('profile','UserController@profile');
 
 Route::get('tablero','TableroController@verpost');
+
+Route::get('/comentario/{id}','ComentarioController@mostrarComentario');
+
+Route::post('/comentario/{id}','ComentarioController@guardarComentario');
