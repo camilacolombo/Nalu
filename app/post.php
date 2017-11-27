@@ -9,7 +9,7 @@ class post extends Model
 
     protected $fillable =
       [
-        'post',
+        'post', 'user_id'
       ];
 
   public function users()

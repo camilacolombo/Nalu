@@ -18,7 +18,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-
 Route::get('/home','HomeController@index');
 
 Route::get('/faq','FaqContoller@faqo');
@@ -27,3 +26,10 @@ Route::get('/elset','ElsetController@elseto');
 
 Route::get('/perfil','PerfilController@prueba');
 
+Route::get('/post','PostController@mostrar');
+
+Route::post('/post','PostController@guardapost');
+
+Route::get('profile','UserController@profile');
+
+Route::get('tablero','TableroController@verpost');
